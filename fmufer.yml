@@ -1,0 +1,11 @@
+transfers:
+  - src: ./test/out/
+    dst: ./upload/
+    host: 127.0.0.1:22
+    user: testuser
+    password: 12345
+  - src: ./test/out2/
+    dst: ./upload/
+    host: 127.0.0.1:22
+    user: testuser
+    password: 12345

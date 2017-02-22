@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sftp:
+    image: atmoz/sftp
+    volumes:
+      - ~/.ssh/id_rsa.pub:/home/testuser/.ssh/keys/id_rsa.pub:ro
+    ports:
+      - "22:22"
+    command: testuser:12345:::upload
+
